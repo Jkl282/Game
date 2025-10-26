@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Water Sort Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Стартовый экран -->
+  <div id="start-screen" class="screen">
+    <h1>💧 Water Sort Game 💧</h1>
+    <button id="start-button">Играть</button>
+    <button id="music-toggle">Музыка: Вкл</button>
+    <canvas id="particles"></canvas>
+  </div>
+
+  <!-- Игровой экран -->
+  <div id="game-screen" class="screen hidden">
+    <h1>Сортируй жидкости</h1>
+    <div id="game-container"></div>
+    <p id="message"></p>
+    <button id="restart">Заново</button>
+  </div>
+
+  <audio id="bg-music" loop>
+    <source src="assets/bg-music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
